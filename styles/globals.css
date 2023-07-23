@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -14,3 +18,25 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.primary{
+  @apply bg-green-600 text-white px-2 py-2 rounded-md   mt-2 w-28 text-sm font-bold border-none
+}
+
+.primary-nowrap{
+  @apply bg-green-600 text-white px-2 py-2 rounded-md w-52 text-sm font-bold border-none
+}
+
+input{
+  @apply mb-2 w-full rounded-md p-1
+}
+th{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(35, 132, 35);
+    font-weight: normal;
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+    
+  }
+
